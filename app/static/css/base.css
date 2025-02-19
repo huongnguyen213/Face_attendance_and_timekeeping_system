@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Kadwa, sans-serif;
+}
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+.sidebar {
+    width: 20%;
+    background-color: #fffefe;
+    padding: 39px 11px 261px 23px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 50px;
+}
+.user-avatar {
+    background-color: #f13fa7;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.user-name {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+}
+.settings-icon {
+    width: 30px;
+    height: 30px;
+}
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-item {
+    margin-bottom: 10px;
+}
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 22px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #777070;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.nav-item span {
+    font-weight: bold;
+}
+
+.nav-item:hover, .nav-link:focus {
+    background-color: #f0f0f0;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.nav-item.active {
+    background-color: #e2f3ff;
+    color: #1e96db;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.nav-icon {
+    width: 30px;
+    height: 30px;
+    transition: filter 0.3s ease;
+}
+
+.nav-icon.active {
+    color:#1e96db;
+}
+
+.nav-item:hover .nav-icon,
+.nav-item:focus .nav-icon {
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(190deg) brightness(118%) contrast(119%);
+}
+
+.main-content {
+    width: 80%;
+    background-color: #f3f5fe;
+    padding: 32px 80px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+}
+.notification-icon {
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+@media (max-width: 991px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar,
+    .main-content {
+        width: 100%;
+    }
+    .sidebar {
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .main-content {
+        padding: 20px;
+        box-shadow: none;
+    }
+}

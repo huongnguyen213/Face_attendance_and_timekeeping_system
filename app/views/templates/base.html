@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <script src="{% static 'js/base.js' %}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar" aria-label="Main Navigation">
+            <div class="user-profile">
+                <div class="user-avatar" aria-hidden="true">H</div>
+                <span class="user-name">Huong Nguyen</span>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/eb75008573d204399d8be2a04b28f2269deeee8d738af82a57532df2355e5249?placeholderIfAbsent=true&apiKey=8ee3abbe3b9a4271ae758a74f07a06c8" alt="Settings" class="settings-icon">
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item" data-page="dashboard">
+                    <!-- <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5a5a1a153e2a98aea8d21585d3a3cf5b1a0ac2fb5c6896040122a897e0cf9962?placeholderIfAbsent=true&apiKey=8ee3abbe3b9a4271ae758a74f07a06c8" alt="" class="nav-icon" aria-hidden="true"> -->
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/213203111fd0d75c603ba7c18032e728a66c65a48756a5423473e11a0fbd751b?placeholderIfAbsent=true&apiKey=8ee3abbe3b9a4271ae758a74f07a06c8" alt="" class="nav-icon" aria-hidden="true">
+                    <span>Dashboard</span>
+                </li>
+                <li class="nav-item" data-page="student_management">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e633f16f99cb8c15bf3dd2024df7967f3cae368abcfbc0ccee77505b9be89cf9?placeholderIfAbsent=true&apiKey=8ee3abbe3b9a4271ae758a74f07a06c8" alt="" class="nav-icon" aria-hidden="true">
+                    <span>Student management</span>
+                </li>
+                <li class="nav-item" data-page="staff_management">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c26b36a4ec4233e1e66c02733d4aa1c96c0c75c035dcdca271496b184a97fffa?placeholderIfAbsent=true&apiKey=8ee3abbe3b9a4271ae758a74f07a06c8" alt="" class="nav-icon" aria-hidden="true">
+                    <span>Staff management</span>
+                </li>
+                <li class="nav-item" data-page="class_credit">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ab11d949eacfe363c8be6e3cae210268fc2af6be3c526052794e6efcf0833284?placeholderIfAbsent=true&apiKey=8ee3abbe3b9a4271ae758a74f07a06c8" alt="" class="nav-icon" aria-hidden="true">
+                    <span>Class credit</span>
+                </li>
+                <li class="nav-item" data-page="attendance">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7e99d30f60ee1844e53674cd69fde6c7608546f3f850cc754ad80712e36947a0?placeholderIfAbsent=true&apiKey=8ee3abbe3b9a4271ae758a74f07a06c8" alt="" class="nav-icon" aria-hidden="true">
+                    <span>Attendance</span>
+                </li>
+                <li class="nav-item" data-page="timekeeping">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/aeae40dfab45e4fbdd15b854c147f802326e6b4d1af2b644b982d4ec3760ba61?placeholderIfAbsent=true&apiKey=8ee3abbe3b9a4271ae758a74f07a06c8" alt="" class="nav-icon" aria-hidden="true">
+                    <span>Timekeeping</span>
+                </li>
+                <li class="nav-item" data-page="tracking">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8a9a02d912ba77c47892c3fce473ff9cc70481412308ace43df29d5321bca405?placeholderIfAbsent=true&apiKey=8ee3abbe3b9a4271ae758a74f07a06c8" alt="" class="nav-icon" aria-hidden="true">
+                    <span>Tracking</span>
+                </li>
+                <li class="nav-item" data-page="setting">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e5510a90f0dd8961cb841cfb1319df5f5ad50baf503cde4cd96776c458ff46e8?placeholderIfAbsent=true&apiKey=8ee3abbe3b9a4271ae758a74f07a06c8" alt="" class="nav-icon" aria-hidden="true">
+                    <span>Setting</span>
+                </li>
+                <li class="nav-item" data-page="login">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e26cee9de837932cf354c4b576ffcb3affcbf6526a4d7e21d1417702774c5f7f?placeholderIfAbsent=true&apiKey=8ee3abbe3b9a4271ae758a74f07a06c8" alt="" class="nav-icon" aria-hidden="true">
+                    <span>Logout</span>
+                </li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d1d470fd84777161aad6dc204c7ec0993bacaf1e68fd2f34903e3390cfd4f519?placeholderIfAbsent=true&apiKey=8ee3abbe3b9a4271ae758a74f07a06c8" alt="Notifications" class="notification-icon">
+            <h1 class="visually-hidden">Dashboard</h1>
+        </main>
+    </div>
+</body>
+</html>

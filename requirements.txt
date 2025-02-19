@@ -1,0 +1,65 @@
+face_attendance/
+│── manage.py
+│── requirements.txt
+│── .env
+│── .gitignore
+│
+├── face_attendance/  # Thư mục chính của Django (Controller)
+│   │── __init__.py
+│   │── settings.py
+│   │── urls.py  # Điều hướng Controller
+│   │── wsgi.py
+│   │── asgi.py
+│   └── middleware.py
+│
+├── app/  # Ứng dụng xử lý nhận diện khuôn mặt
+│   ├── models/  # Model (M)
+│   │   ├── __init__.py
+│   │   ├── user.py  # Model Người dùng
+│   │   ├── attendance.py  # Model Điểm danh
+│   │   ├── face_encoding.py  # Lưu mã hóa khuôn mặt
+│   │   └── migrations/
+│   │
+│   ├── views/  # View (V)
+│   │   ├── __init__.py
+│   │   ├── user_views.py  # View quản lý tài khoản
+│   │   ├── attendance_views.py  # View điểm danh
+│   │   ├── face_views.py  # API nhận diện khuôn mặt
+│   │   └── templates/  # HTML Templates
+│   │       ├── base.html
+│   │       ├── login.html
+│   │       ├── dashboard.html
+│   │       └── attendance_log.html
+│   │
+│   ├── controllers/  # Controller (C)
+│   │   ├── __init__.py
+│   │   ├── user_controller.py  # Xử lý tài khoản
+│   │   ├── attendance_controller.py  # Xử lý điểm danh
+│   │   ├── face_controller.py  # Xử lý nhận diện khuôn mặt
+│   │   └── utils.py  # Các hàm hỗ trợ
+│   │
+│   ├── static/  # File tĩnh (CSS, JS, ảnh)
+│   │   ├── css/
+│   │   ├── js/
+│   │   └── images/
+│   │
+│   └── media/  # Lưu ảnh khuôn mặt
+│       ├── users/
+│       ├── attendance_logs/
+│       └── temp/
+│
+├── api/  # API cho hệ thống
+│   ├── __init__.py
+│   ├── urls.py  # Điều hướng API
+│   ├── serializers.py  # Chuyển đổi dữ liệu
+│   ├── authentication.py  # Xử lý đăng nhập API
+│   ├── face_recognition.py  # Tích hợp OpenCV/DeepFace
+│   └── throttling.py  # Giới hạn số request API
+│
+└── docs/  # Tài liệu hướng dẫn
+    ├── API_Documentation.md
+    ├── Installation_Guide.md
+    └── README.md
+
+username: huong
+pass: 111111
