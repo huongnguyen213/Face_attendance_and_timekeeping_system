@@ -24,10 +24,12 @@ def home(request):
     return render(request, 'base.html')
 
 def loadPage(request, page_name):
-    # Render template tương ứng với tên trang
-    template_name = f'page/{page_name}.html'
-    return render(request, template_name)
+    try:
+        # Render template tương ứng với tên trang
+        template_name = f'page/{page_name}.html'
+        return render(request, template_name)
+    except:
+        return render(request, "page/404.html")  # Trả về trang lỗi nếu không tìm thấy
 
-# def dashboard(request):
-#     return render(request, 'page/dashboard.html')
+
 
